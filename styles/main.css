@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --primary-color: #4a148c;
+  --primary-textColor: #fff;
+  --primary-darkColor: #4b636e;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.noise {
+  filter: blur(20px);
+}
+
+section label {
+  text-transform: capitalize;
+  margin-top: 5px;
+}
+
+section input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 0;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--primary-darkColor);
+}
+
+section input::-webkit-input-placeholder {
+  color: var(--primary-darkColor);
+}
+
+section input::-webkit-datetime-edit-day-field,
+section input::-webkit-datetime-edit-month-field,
+section input::-webkit-datetime-edit-year-field {
+  color: var(--primary-darkColor);
+}
+
+section button {
+  width: inherit;
+  padding: 10px;
+  text-align: center;
+  margin: 10px auto;
+  outline: none;
+  border: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--primary-textColor);
+}
+
+section button:hover {
+  cursor: pointer;
+}
+
+.bookTicket {
+  background-color: #fff;
+  padding: 25px 0;
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 2px solid var(--primary-darkColor);
+  border-radius: 5px;
+}
+
+.bookTicket input,
+.bookTicket label {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.book {
+  display: flex;
+}
