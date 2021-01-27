@@ -83,13 +83,12 @@ document.getElementById("cnfrm")?.addEventListener("click", () => {
     doj.value,
     new Date().getTime().toString()
   );
-  (function () {
-    id.value = "";
-    mobileNumber.value = "";
-    source.value = "";
-    destintation.value = "";
-    doj.value = "";
-  })();
+
+  id.value = "";
+  mobileNumber.value = "";
+  source.value = "";
+  destintation.value = "";
+  doj.value = "";
 
   document.querySelector("section")?.classList.remove("noise");
   document.querySelector(".bookTicket")?.classList.remove("book");
