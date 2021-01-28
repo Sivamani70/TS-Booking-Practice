@@ -1,9 +1,4 @@
-import { Solution, BookTicket } from "./main";
-/**
- * modify above line in compiled index.js file as below
- * import { Solution, BookTicket } from "./main.js";
- * /{{ vainila Js doesn't support module import without .js extension}}/
- */
+import { Solution, BookTicket } from "./main.js";
 
 const nameElement = document.getElementById("name") as HTMLInputElement;
 const idElement = document.getElementById("id") as HTMLInputElement;
